@@ -19,5 +19,6 @@ from first_app import views
 
 urlpatterns = [
     re_path(r'^$',views.index, name='index'),
+    re_path(r'^mynewextension/',include('first_app.urls')),
     path('admin/', admin.site.urls),
 ]

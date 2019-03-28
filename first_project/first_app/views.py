@@ -8,4 +8,7 @@ from django.http import HttpResponse
 # Each view must be mapped to urls.py file
 
 def index(request):
-    return HttpResponse("Hello World!")
+    #return HttpResponse("Hello World!")
+    my_dict = {'insert_me':"Hello I am from first_app/index.html!"}
+    #'first_app/index.html' the forward slash is ok, because it's read by the browser
+    return render(request, 'first_app/index.html', context=my_dict)
