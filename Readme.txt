@@ -71,4 +71,4 @@ Using templates
 Using Statis Files
 # Add static files dir to settings.py
 
-ss16 lec125
+ss16 lec126
